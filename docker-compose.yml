@@ -1,0 +1,19 @@
+version: "3.1"
+services:
+  php:
+    image: library/php:7.2-cli
+    working_dir: /app
+    volumes:
+       - .:/app
+    command: /bin/sh
+    tty: true
+
+  composer:
+    image: library/composer
+    working_dir: /app
+    volumes:
+       - .:/app
+    command: /bin/sh
+    tty: true
+#    command:
+#      - install

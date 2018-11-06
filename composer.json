@@ -1,0 +1,21 @@
+{
+  "name": "geega/php-event-manager",
+  "type": "library",
+  "description": "Simple php event manager",
+  "version": "dev-master",
+  "autoload": {
+    "psr-4": {
+      "Geega\\EventManager\\": "src/",
+      "Geega\\EventManager\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.4"
+  },
+  "archive": {
+    "exclude": ["/.git/"]
+  }
+}
